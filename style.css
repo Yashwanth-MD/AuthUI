@@ -1,21 +1,31 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #4facfe, #00f2fe);
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    align-items: flex-start;  /* 🟢 Align forms at the top */
+    min-height: 100vh;
+    padding: 40px 20px;       /* 🟢 Allows space for scrolling on smaller screens */
 }
 
+/* Common form container */
 form {
     background-color: white;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     width: 350px;
+    max-width: 100%;
 }
 
+/* Section for login/signup/forgot password */
 fieldset {
     border: 2px solid #4facfe;
     padding: 20px;
@@ -24,7 +34,7 @@ fieldset {
 }
 
 legend {
-    padding: 5px 5px;
+    padding: 5px 10px;
     font-weight: bold;
     color: #4facfe;
 }
